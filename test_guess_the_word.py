@@ -14,7 +14,10 @@ def test_is_word_in_list():
 # Tests to make sure correct and incorrect
 # answers are being processed properly.
 def test_correct_incorrect_process():
+    # The list here won't be tested, just the result of the
+    # process_guess function.
     indexes_guessed = []
+    # Word from the pre-defined list.
     word_chosen = "tower"
     assert process_guess(indexes_guessed, "w", word_chosen) == True
     assert process_guess(indexes_guessed, "q", word_chosen) == False
