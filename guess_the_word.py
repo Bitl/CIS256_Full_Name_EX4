@@ -159,5 +159,6 @@ def game_main():
             attempts -= 1
 
 # If the user executes this file normally, it will execute game_main().
+# This is so the test file doesn't execute this as well.
 if __name__ == "__main__":
     game_main()
