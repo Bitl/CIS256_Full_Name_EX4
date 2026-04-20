@@ -158,4 +158,6 @@ def game_main():
             print("Wrong choice. One attempt deducted.")
             attempts -= 1
 
-game_main()
+# If the user executes this file normally, it will execute game_main().
+if __name__ == "__main__":
+    game_main()
