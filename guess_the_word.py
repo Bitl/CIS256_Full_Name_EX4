@@ -150,11 +150,13 @@ def game_main():
 
         # Check if we already have the letter guessed.
         if check_guess_letter_exists(indexes_guessed, final_guess, word_chosen):
+            print("------------------------------------")
             print("You already guessed that letter.")
             continue
 
         # If our choice is wrong, decrease the attempts.
         if not process_guess(indexes_guessed, final_guess, word_chosen):
+            print("------------------------------------")
             print("Wrong choice. One attempt deducted.")
             attempts -= 1
 
