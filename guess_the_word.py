@@ -159,4 +159,3 @@ def game_main():
             attempts -= 1
 
 game_main()
-    
